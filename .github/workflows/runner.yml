@@ -13,5 +13,5 @@ jobs:
 
     - name: Run script
       run: |
-        chmod +x main.sh
-        ./main.sh
+        chmod +x show_name.sh
+        ./show_name.sh
