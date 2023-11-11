@@ -1,0 +1,17 @@
+name: Run script for show full name
+on:
+  push:
+    branches:
+      - main
+jobs:
+  display_name:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check repo
+      uses: actions/checkout@v3
+
+    - name: Run script
+      run: |
+        chmod +x main.sh
+        ./main.sh
